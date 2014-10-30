@@ -13,6 +13,9 @@
 		6E21564C1A0225C800D0CE58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E21564B1A0225C800D0CE58 /* Images.xcassets */; };
 		6E21564F1A0225C800D0CE58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E21564D1A0225C800D0CE58 /* LaunchScreen.xib */; };
 		6E21565B1A0225C800D0CE58 /* ARTCircularSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E21565A1A0225C800D0CE58 /* ARTCircularSliderTests.swift */; };
+		6E2156651A02266400D0CE58 /* ARTCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2156641A02266400D0CE58 /* ARTCircularSlider.swift */; };
+		6E47C0531A024BE000221E54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47C0521A024BE000221E54 /* QuartzCore.framework */; };
+		6E47C0551A024BEB00221E54 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E47C0541A024BEB00221E54 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		6E2156541A0225C800D0CE58 /* ARTCircularSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARTCircularSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2156591A0225C800D0CE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E21565A1A0225C800D0CE58 /* ARTCircularSliderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTCircularSliderTests.swift; sourceTree = "<group>"; };
+		6E2156641A02266400D0CE58 /* ARTCircularSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTCircularSlider.swift; sourceTree = "<group>"; };
+		6E47C0521A024BE000221E54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E47C0541A024BEB00221E54 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E47C0551A024BEB00221E54 /* CoreImage.framework in Frameworks */,
+				6E47C0531A024BE000221E54 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,8 @@
 		6E2156361A0225C800D0CE58 = {
 			isa = PBXGroup;
 			children = (
+				6E47C0541A024BEB00221E54 /* CoreImage.framework */,
+				6E47C0521A024BE000221E54 /* QuartzCore.framework */,
 				6E2156411A0225C800D0CE58 /* ARTCircularSlider */,
 				6E2156571A0225C800D0CE58 /* ARTCircularSliderTests */,
 				6E2156401A0225C800D0CE58 /* Products */,
@@ -77,6 +87,7 @@
 		6E2156411A0225C800D0CE58 /* ARTCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
+				6E2156661A02267E00D0CE58 /* View */,
 				6E2156441A0225C800D0CE58 /* AppDelegate.swift */,
 				6E2156461A0225C800D0CE58 /* ViewController.swift */,
 				6E2156481A0225C800D0CE58 /* Main.storyboard */,
@@ -110,6 +121,14 @@
 				6E2156591A0225C800D0CE58 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E2156661A02267E00D0CE58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E2156641A02266400D0CE58 /* ARTCircularSlider.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2156471A0225C800D0CE58 /* ViewController.swift in Sources */,
+				6E2156651A02266400D0CE58 /* ARTCircularSlider.swift in Sources */,
 				6E2156451A0225C800D0CE58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -405,6 +425,7 @@
 				6E2156601A0225C800D0CE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E2156611A0225C800D0CE58 /* Build configuration list for PBXNativeTarget "ARTCircularSliderTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				6E2156631A0225C800D0CE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
